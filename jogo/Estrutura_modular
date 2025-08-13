@@ -1,0 +1,91 @@
+src/
+├── components/
+│   ├── Game/
+│   │   ├── CloudClimber.js          # Componente principal
+│   │   ├── GameCanvas.js            # Canvas e renderização
+│   │   ├── GameUI.js                # Interface (HUD, menus)
+│   │   └── GameControls.js          # Instruções de controle
+│   └── Common/
+│       └── Button.js                # Botão reutilizável
+├── game/
+│   ├── Player.js                    # Lógica do jogador
+│   ├── Platform.js                  # Lógica das plataformas
+│   ├── Camera.js                    # Sistema de câmera
+│   ├── Physics.js                   # Sistema de física
+│   ├── Input.js                     # Gerenciamento de input
+│   ├── Collision.js                 # Detecção de colisão
+│   ├── GameState.js                 # Estados do jogo
+│   └── Renderer.js                  # Sistema de renderização
+├── constants/
+│   ├── gameConfig.js                # Configurações do jogo
+│   └── gameConstants.js             # Constantes gerais
+├── utils/
+│   ├── mathUtils.js                 # Funções matemáticas
+│   └── gameUtils.js                 # Utilitários do jogo
+└── hooks/
+    ├── useGameLoop.js               # Hook do loop principal
+    ├── useKeyboard.js               # Hook de teclado
+    └── useGameState.js              # Hook de estado do jogo
+
+
+
+📋 Descrição dos Arquivos
+Components (Componentes React)
+
+CloudClimber.js - Componente principal que orquestra tudo
+GameCanvas.js - Gerencia o canvas e renderização
+GameUI.js - Interface do usuário (HUD, menus, pontuação)
+Button.js - Componente de botão reutilizável
+
+Game (Lógica do Jogo)
+
+Player.js - Movimentação, estado e propriedades do jogador
+Platform.js - Criação, movimento e propriedades das plataformas
+Camera.js - Sistema de câmera que segue o jogador
+Physics.js - Gravidade, velocidade, saltos
+Input.js - Captura e processamento de teclas
+Collision.js - Detecção de colisões entre objetos
+GameState.js - Gerenciamento dos estados (menu, jogando, game over)
+Renderer.js - Renderização de todos os elementos visuais
+
+Constants (Configurações)
+
+gameConfig.js - Configurações ajustáveis (velocidades, tamanhos)
+gameConstants.js - Constantes fixas do jogo
+
+Utils (Utilitários)
+
+mathUtils.js - Funções matemáticas auxiliares
+gameUtils.js - Funções utilitárias gerais
+
+Hooks (React Hooks Customizados)
+
+useGameLoop.js - Hook para o loop principal do jogo
+useKeyboard.js - Hook para captura de teclas
+useGameState.js - Hook para gerenciar estado do jogo
+
+🔧 Vantagens desta Estrutura
+1. Separação de Responsabilidades
+
+Cada arquivo tem uma responsabilidade específica
+Facilita encontrar e modificar funcionalidades
+
+2. Reutilização de Código
+
+Componentes e funções podem ser reutilizados
+Hooks customizados para lógicas comuns
+
+3. Facilidade de Manutenção
+
+Bugs são mais fáceis de localizar
+Modificações não afetam outros sistemas
+
+4. Escalabilidade
+
+Fácil adicionar novos recursos
+Estrutura preparada para crescimento
+
+5. Testabilidade
+
+Cada módulo pode ser testado independentemente
+Funções puras facilitam testes unitários

@@ -47,3 +47,38 @@
     * Recorde pessoal.
     * Botão para reiniciar.
    
+
+### 6. Elementos Visuais
+
+| Elemento        | Descrição                                            |
+| --------------- | ---------------------------------------------------- |
+| **Personagem**  | Pequeno aventureiro simpático, com olhos expressivos |
+| **Plataformas** | Nuvens fofas e bases de madeira/metal                |
+| **Fundo**       | Gradiente azul-céu                                   |
+| **Efeitos**     | Piscar ao receber dano, partículas de nuvem ao pular |
+
+
+### 7. Recursos Sonoros
+  * **Pulo**: Som suave.
+  * **Queda**: Som grave/impactante.
+  * **Coleta de vida extra**: Som alegre.
+  * **Trilha Sonora**: Música leve e motivante.
+
+
+
+### 8. Tabela de Comandos
+
+| Ação           | Tecla(s)       |
+| -------------- | -------------- |
+| Mover Esquerda | ← ou A         |
+| Mover Direita  | → ou D         |
+| Pular          | Espaço, ↑ ou W |
+| Pausar         | Esc            |
+
+
+### 9. Protótipo Visual (Wireframe)
+
+ ┌─────────────────────────────────────────────┐
+ │ ❤️x3          Pontos: 120
+
+

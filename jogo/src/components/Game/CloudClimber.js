@@ -245,4 +245,22 @@ const CloudClimber = () => {
           <div className="flex justify-center">
             <canvas
               ref={canvasRef}
-              width
+              width={GAME_CONSTANTS.CANVAS_WIDTH}
+              height={GAME_CONSTANTS.CANVAS_HEIGHT}
+              className="border-4 border-gray-300 bg-sky-200"
+            />
+          </div>
+        )}
+
+        {/* Instruções de controle */}
+        {currentState === GAME_STATES.PLAYING && (
+          <p className="text-center mt-2 text-gray-600">
+            Use ← → (ou A/D) para mover, ESPAÇO (ou ↑/W) para pular, ESC para pausar
+          </p>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default CloudClimber;
